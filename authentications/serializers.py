@@ -1,14 +1,8 @@
-import django.contrib.auth.password_validation as validators
+
 from django.contrib import auth
 from django.contrib.auth import get_user_model
-from django.core import exceptions
-from django.core.validators import RegexValidator
-from django.forms import forms
-from phonenumber_field.serializerfields import PhoneNumberField
 from rest_framework import serializers
 from rest_framework.exceptions import AuthenticationFailed
-from rest_framework_jwt.serializers import jwt_payload_handler
-from rest_framework_jwt.settings import api_settings
 from rest_framework_simplejwt.tokens import RefreshToken
 from sqlparse.compat import text_type
 from authentications import models
